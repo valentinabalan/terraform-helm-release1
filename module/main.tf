@@ -1,13 +1,10 @@
 module mypythonapp {
-    source ="../terraform/"
+    source ="valentinabalan/release1/helm"
     name = "python"
     namespace = "python-create-namespace"
-    chart  = "../myapp"
 }
 
-module mygo {
-    source ="../terraform/"
-    name = "go"
-    namespace = "go-namespace"
-    chart  = "../myapp"
+module "release1" {
+  source  = "valentinabalan/release1/helm"
+  version = "0.0.2"
 }
