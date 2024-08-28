@@ -1,5 +1,5 @@
 module mypythonapp {
-    source = "valentinabalanterraform-helm-release1"
+    source = "valentinabalan/release1/helm"
     name = "python"
     namespace = "wordpress"
   values  = [<<EOF
