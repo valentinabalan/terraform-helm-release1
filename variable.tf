@@ -9,3 +9,8 @@ variable "namespace" {
   default     = "mywordpressapp"
   description = "the namespace for app"
 }
+
+variable namespace_name {
+    type = string
+    description = "this is for single app namespace"
+}
